@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HostHome extends StatelessWidget {
+class PullImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const Color AppBarColor = Colors.red;
@@ -8,7 +8,7 @@ class HostHome extends StatelessWidget {
     const Color TextColor = Colors.white;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Provide Host IP"),
+        title: Text("Pull Image"),
         backgroundColor: AppBarColor,
       ),
       body: Container(

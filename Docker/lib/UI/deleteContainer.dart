@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HostHome extends StatelessWidget {
+class DeleteContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const Color AppBarColor = Colors.red;
@@ -8,7 +8,7 @@ class HostHome extends StatelessWidget {
     const Color TextColor = Colors.white;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Provide Host IP"),
+        title: Text("Delete Container"),
         backgroundColor: AppBarColor,
       ),
       body: Container(
