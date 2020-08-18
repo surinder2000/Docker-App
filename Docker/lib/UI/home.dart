@@ -13,17 +13,19 @@ import 'package:Docker/UI/host.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const Color OuterContainerColor = Colors.black;
+    const Color OuterContainerColor = Colors.white;
 
-    const Color ColumnContainerColor = Colors.blue;
+    const Color ColumnContainerColor = Colors.white;
 
     const Color ButtonTextColor = Colors.white;
 
-    const Color ButtonContainerColor = Colors.redAccent;
+    const Color ButtonContainerColor = Colors.blue;
 
-    const Color AppBarColor = Colors.redAccent;
+    const Color AppBarColor = Colors.blue;
 
-    const Color AppBodyColor = Colors.redAccent;
+    const Color AppBodyColor = Colors.white;
+
+    const Color BorderColor = Colors.white;
 
     var MyBody = Center(
       child: Container(
@@ -32,7 +34,7 @@ class Home extends StatelessWidget {
         margin: EdgeInsets.all(8),
         decoration: BoxDecoration(
           border: Border.all(
-            color: Colors.blue,
+            color: BorderColor,
             width: 3,
           ),
           borderRadius: BorderRadius.circular(12),
@@ -49,7 +51,7 @@ class Home extends StatelessWidget {
                 color: ColumnContainerColor,
                 border: Border.all(
                   width: 3,
-                  color: Colors.blue,
+                  color: BorderColor,
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -91,7 +93,7 @@ class Home extends StatelessWidget {
                 color: ColumnContainerColor,
                 border: Border.all(
                   width: 3,
-                  color: Colors.blue,
+                  color: BorderColor,
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -167,7 +169,7 @@ class Home extends StatelessWidget {
                 color: ColumnContainerColor,
                 border: Border.all(
                   width: 3,
-                  color: Colors.blue,
+                  color: BorderColor,
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -241,7 +243,7 @@ class Home extends StatelessWidget {
                 color: ColumnContainerColor,
                 border: Border.all(
                   width: 3,
-                  color: Colors.blue,
+                  color: BorderColor,
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -315,7 +317,7 @@ class Home extends StatelessWidget {
                 color: ColumnContainerColor,
                 border: Border.all(
                   width: 3,
-                  color: Colors.blue,
+                  color: BorderColor,
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),

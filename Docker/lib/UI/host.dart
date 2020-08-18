@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class HostHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const Color AppBarColor = Colors.redAccent;
-    const Color ButtonColor = Colors.redAccent;
+    const Color AppBarColor = Colors.blue;
+    const Color ButtonColor = Colors.blue;
     const Color TextColor = Colors.white;
-    const Color MyBodyColor = Colors.redAccent;
-    const Color OuterContainerColor = Colors.black;
-    const Color ContainerColor = Colors.blue;
-
+    const Color MyBodyColor = Colors.white;
+    const Color OuterContainerColor = Colors.white;
+    const Color ContainerColor = Colors.white;
+    const Color BorderColor = Colors.white;
     String IP;
 
     TestButton() {
@@ -25,7 +25,7 @@ class HostHome extends StatelessWidget {
         decoration: BoxDecoration(
           border: Border.all(
             width: 3,
-            color: OuterContainerColor,
+            color: BorderColor,
           ),
           color: OuterContainerColor,
           borderRadius: BorderRadius.circular(12),
@@ -47,13 +47,16 @@ class HostHome extends StatelessWidget {
                 margin: EdgeInsets.all(8),
                 padding: EdgeInsets.all(8),
                 color: ButtonColor,
-                child: TextField(
-                  onChanged: (value) {
-                    IP = value;
-                  },
-                  textAlign: TextAlign.left,
-                  decoration: InputDecoration(
-                    hintText: "Provide Docker Host IP",
+                child: Card(
+                  child: TextField(
+                    onChanged: (value) {
+                      IP = value;
+                    },
+                    textAlign: TextAlign.left,
+                    decoration: InputDecoration(
+                      hintText: "Provide Docker Host IP",
+                      contentPadding: EdgeInsets.all(8),
+                    ),
                   ),
                 ),
               ),

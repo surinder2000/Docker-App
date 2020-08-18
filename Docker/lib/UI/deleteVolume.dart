@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class DeleteVolume extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const Color AppBarColor = Colors.red;
-    const Color ButtonColor = Colors.red;
+    const Color AppBarColor = Colors.blue;
+    const Color ButtonColor = Colors.blue;
     const Color TextColor = Colors.white;
     return Scaffold(
       appBar: AppBar(
